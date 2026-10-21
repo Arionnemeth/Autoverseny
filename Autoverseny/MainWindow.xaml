@@ -1,0 +1,49 @@
+﻿<Window x:Class="Autoverseny.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Autoverseny"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black"/>
+                <GradientStop Color="White" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="start" Content="Start" Width="90" Height="45" Grid.Row="1" Click="start_Click" Foreground="White">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FFE903D3" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Canvas x:Name="palya" Grid.Row="3" Background="SlateGray">
+            <TextBlock x:Name="celvonalacska" Text="-----------------------------------------" FontSize="20" Canvas.Left="525" Canvas.Top="152" RenderTransformOrigin="0.5,0.5" Width="324" Foreground="White">
+                <TextBlock.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="90.588"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+            <Button x:Name="auto" Content="Audi" Width="90" Height="45" Canvas.Left="20"  Canvas.Top="50" Background="OrangeRed"/>
+            <Button x:Name="auto2" Content="BMW" Width="90" Height="45" Canvas.Left="20"  Canvas.Top="100" Background="DeepSkyBlue"/>
+            <Button x:Name="auto3" Content="Mercedes" Width="90" Height="45" Canvas.Left="20"  Canvas.Top="150" Background="MediumSpringGreen"/>
+            <Button x:Name="auto4" Content="Porsche" Width="90" Height="45" Canvas.Left="20"  Canvas.Top="200" Background="Gold"/>
+            <Button x:Name="auto5" Content="Ferrari" Width="90" Height="45" Canvas.Left="20"  Canvas.Top="250" Background="Crimson"/>
+        </Canvas>
+        
+    </Grid>
+</Window>
