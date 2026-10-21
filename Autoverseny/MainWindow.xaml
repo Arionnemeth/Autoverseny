@@ -19,7 +19,7 @@
             <RowDefinition Height="10"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <Button x:Name="start" Content="Start" Width="90" Height="45" Grid.Row="1" Click="start_Click" Foreground="White">
+        <Button x:Name="start" Content="Start" Width="90" Height="45" Grid.Row="1" Click="start_Click" Foreground="White" FontSize="20" FontFamily="Ravie">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="Black"/>
@@ -44,7 +44,7 @@
             <Button x:Name="auto4" Content="Porsche" Width="90" Height="45" Canvas.Left="20"  Canvas.Top="200" Background="Gold"/>
             <Button x:Name="auto5" Content="Ferrari" Width="90" Height="45" Canvas.Left="20"  Canvas.Top="250" Background="Crimson"/>
         </Canvas>
-        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Előző nyertes:" VerticalAlignment="Top" Foreground="White" Height="32" Width="132" FontSize="20"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Előző nyertes:" VerticalAlignment="Top" Foreground="White" Height="32" Width="132" FontSize="20" FontFamily="Book Antiqua"/>
         <TextBlock x:Name="elozo_nyertes" HorizontalAlignment="Left" Margin="159,10,0,0" Grid.Row="1" TextWrapping="Wrap"  VerticalAlignment="Top" Foreground="#FFFF2DEB" Height="37" Width="86" FontSize="20" RenderTransformOrigin="-0.176,0.534"/>
 
     </Grid>
