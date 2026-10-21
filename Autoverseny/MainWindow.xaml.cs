@@ -67,13 +67,17 @@ namespace Autoverseny
             {
                 timer.Stop();
                 MessageBox.Show($"{auto.Content} nyert!");
+                elozo_nyertes.Text = auto.Content.ToString();
                 start.IsEnabled = true;
                 start.Foreground = Brushes.White;
             }  
         }
         private void start_Click(object sender, RoutedEventArgs e)
         {
-            Canvas.SetLeft(auto, 20);
+            foreach (var autos in autok)
+            {
+                Canvas.SetLeft(autos, 20);
+            }
             timer.Start();
             start.Foreground = Brushes.Yellow;
             start.IsEnabled = false;
